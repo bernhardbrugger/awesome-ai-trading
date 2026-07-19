@@ -39,6 +39,7 @@
 - [QLib](https://github.com/microsoft/qlib) — Microsoft's AI-oriented quantitative investment platform.
 - [FinBERT](https://github.com/ProsusAI/finBERT) — Financial sentiment analysis with pre-trained NLP models.
 - [Stock-Prediction-Models](https://github.com/huseinzol05/Stock-Prediction-Models) — Collection of ML/DL models for stock prediction.
+- [ml-quant-trading](https://github.com/initial-d/ml-quant-trading) — PyTorch multi-factor research stack with mask-aware factor computation, ML baselines, portfolio optimization, and vectorized backtesting.
 - [mlfinlab](https://github.com/hudson-and-thames/mlfinlab) — Implementations from *Advances in Financial Machine Learning*.
 - [OpenBB](https://github.com/OpenBB-finance/OpenBB) — Open-source investment research platform with ML integrations.
 
