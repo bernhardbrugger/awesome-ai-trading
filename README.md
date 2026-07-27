@@ -37,6 +37,7 @@
 - [FinRL](https://github.com/AI4Finance-Foundation/FinRL) — Deep reinforcement learning framework for quantitative finance.
 - [TensorTrade](https://github.com/tensortrade-org/tensortrade) — Reinforcement learning for trading using TensorFlow.
 - [QLib](https://github.com/microsoft/qlib) — Microsoft's AI-oriented quantitative investment platform.
+- [ml-quant-trading](https://github.com/initial-d/ml-quant-trading) — PyTorch research stack for multi-factor modeling, bias correction, portfolio optimization, and vectorized backtesting.
 - [FinBERT](https://github.com/ProsusAI/finBERT) — Financial sentiment analysis with pre-trained NLP models.
 - [Stock-Prediction-Models](https://github.com/huseinzol05/Stock-Prediction-Models) — Collection of ML/DL models for stock prediction.
 - [mlfinlab](https://github.com/hudson-and-thames/mlfinlab) — Implementations from *Advances in Financial Machine Learning*.
