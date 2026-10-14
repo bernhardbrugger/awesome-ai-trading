@@ -22,6 +22,7 @@
 ### Backtesting & Trading
 
 - [Backtrader](https://www.backtrader.com/) — Feature-rich Python backtesting framework with live trading support.
+- [OpenBacktesting](https://github.com/lucidcog/openbacktesting) — Python framework for single-asset historical backtesting with pandas statistics, indicators, and parameter optimization.
 - [Zipline](https://github.com/quantopian/zipline) — Pythonic algorithmic trading library (originally by Quantopian).
 - [VectorBT](https://github.com/polakowo/vectorbt) — Blazing-fast vectorized backtesting and analysis toolkit.
 - [Lean (QuantConnect)](https://github.com/QuantConnect/Lean) — Open-source algorithmic trading engine in C#/Python.
