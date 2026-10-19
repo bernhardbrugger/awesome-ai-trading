@@ -183,6 +183,7 @@
 - [Towards Data Science – Finance](https://towardsdatascience.com/tagged/finance) — ML/finance articles on Medium.
 - [QuantInsti Blog](https://blog.quantinsti.com/) — Algorithmic and quantitative trading education.
 - [Robot Wealth](https://robotwealth.com/blog/) — Systematic trading research and insights.
+- [RealAITrader](https://realaitrader.com/) — Independent coverage of AI trading, algorithmic trading systems, and trading technology.
 - [Flirting with Models (Newfound Research)](https://blog.thinknewfound.com/) — Quantitative portfolio research.
 
 ### YouTube
