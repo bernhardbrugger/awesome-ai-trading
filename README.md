@@ -184,6 +184,7 @@
 - [QuantInsti Blog](https://blog.quantinsti.com/) — Algorithmic and quantitative trading education.
 - [Robot Wealth](https://robotwealth.com/blog/) — Systematic trading research and insights.
 - [Flirting with Models (Newfound Research)](https://blog.thinknewfound.com/) — Quantitative portfolio research.
+- [RealAITrader](https://realaitrader.com/) — Independent coverage of AI trading, algorithmic trading systems, and trading technology.
 
 ### YouTube
 
