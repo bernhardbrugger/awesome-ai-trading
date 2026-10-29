@@ -20,4 +20,5 @@ exclude = [
   '^https://discord\.gg/',
   '^https://www\.coursera\.org/',
   '^https://www\.wiley\.com/',
+  '^https://www\.oreilly\.com/',
 ]
