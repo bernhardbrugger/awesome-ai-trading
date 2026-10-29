@@ -1,0 +1,23 @@
+# Link checker settings (https://lychee.cli.rs). Checked monthly and on every pull request that touches README.md.
+max_retries = 2
+timeout = 30
+max_concurrency = 8
+user_agent = "Mozilla/5.0 (compatible; awesome-ai-trading link check; +https://github.com/bernhardbrugger/awesome-ai-trading)"
+
+# 429 = rate limited; the site exists. Everything else outside 2xx is a failure.
+accept = ["200..=299", "429"]
+
+# Sites that block automated requests (403/other) although the page exists. Checked by hand, see CONTRIBUTING.md.
+exclude = [
+  '^https://doi\.org/',
+  '^https://papers\.ssrn\.com/',
+  '^https://www\.packtpub\.com/',
+  '^https://www\.sec\.gov/',
+  '^https://glassnode\.com/',
+  '^https://messari\.io/',
+  '^https://www\.reddit\.com/',
+  '^https://www\.youtube\.com/',
+  '^https://discord\.gg/',
+  '^https://www\.coursera\.org/',
+  '^https://www\.wiley\.com/',
+]
