@@ -61,6 +61,7 @@ Few finance MCP servers are mature yet; the list stays short on purpose.
 - [Qlib](https://github.com/microsoft/qlib) — Microsoft's AI-oriented quantitative investment platform. Paper: [Yang et al.](https://arxiv.org/abs/2009.11189).
 - [FinRL](https://github.com/AI4Finance-Foundation/FinRL) — Deep reinforcement learning framework for quantitative finance.
 - [TensorTrade](https://github.com/tensortrade-org/tensortrade) — Reinforcement learning for trading, built on TensorFlow.
+- [ml-quant-trading](https://github.com/initial-d/ml-quant-trading) — PyTorch multi-factor research stack with mask-aware factor computation, ML baselines, portfolio optimization, and vectorized backtesting.
 - [OpenBB](https://github.com/openbq-org/OpenBB) — Open data platform for analysts, quants and AI agents (the project moved to the `openbq-org` organisation).
 
 ---
