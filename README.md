@@ -28,6 +28,7 @@ Every project listed here was checked for existence and recent activity on **202
 ## LLMs & AI Agents
 
 - [TradingAgents](https://github.com/TauricResearch/TradingAgents) — Multi-agent LLM framework that mimics a trading firm (analysts, researchers, trader, risk team). Paper: [Xiao et al.](https://arxiv.org/abs/2412.20138).
+- [TradingAgents vs TradingAgents-CN vs Vibe-Trading](https://aiquantnav.com/en/compare/tradingagents-vs-tradingagents-cn-vs-vibe-trading) — Free side-by-side comparison of three open-source LLM multi-agent trading frameworks already listed above (maintenance, markets, localization).
 - [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) — Proof-of-concept team of LLM agents that analyse stocks (for education, no live trading).
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) — Open-source financial LLMs, with data pipelines and fine-tuning recipes.
 - [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) — Open-source AI agent platform for financial analysis, built on LLMs.
