@@ -13,6 +13,7 @@ exclude = [
   '^https://papers\.ssrn\.com/',
   '^https://www\.packtpub\.com/',
   '^https://www\.sec\.gov/',
+  '^https://www\.cftc\.gov/',
   '^https://glassnode\.com/',
   '^https://messari\.io/',
   '^https://www\.reddit\.com/',

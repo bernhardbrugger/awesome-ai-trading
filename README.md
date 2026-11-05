@@ -2,9 +2,19 @@
 
 > A curated list of tools, data, papers and learning material for AI/ML-driven trading and quantitative finance: classic backtesting and machine learning, plus LLM agents, MCP servers and time-series foundation models.
 
-Every project listed here was checked for existence and recent activity on **2026-10-29**; dead and archived projects were removed. Links are re-checked automatically (see [CONTRIBUTING.md](CONTRIBUTING.md)). Anything marked ⚠️ still works but is barely maintained.
+Every project listed here was checked for existence and recent activity on **2026-11-05**; dead and archived projects were removed. Links are re-checked automatically (see [CONTRIBUTING.md](CONTRIBUTING.md)). Anything marked ⚠️ still works but is barely maintained.
 
 > **Not financial advice.** Software and papers in this list are for research and education. Most published strategies stop working once costs, slippage and overfitting are accounted for. Read [Pitfalls: backtests that lie](#pitfalls-backtests-that-lie) before you trade real money.
+
+## Start here
+
+Not sure where to begin? Pick the question you have:
+
+- **"I want to test a trading idea honestly."** Read [Pitfalls: backtests that lie](#pitfalls-backtests-that-lie) first, then choose an engine with [Which backtester?](#which-backtester), then judge the result with [QuantStats](https://github.com/ranaroussi/quantstats) or [skfolio](https://github.com/skfolio/skfolio).
+- **"I want data."** [Data Sources & APIs](#data-sources--apis) says what is free and what is not; the academic sets (Fama-French factors, Open Source Asset Pricing) are listed under [Academic datasets](#academic-datasets).
+- **"I want an LLM to help with research."** [LLMs & AI Agents](#llms--ai-agents) lists agents and finance MCP servers and its papers; read [Pitfalls](#pitfalls-backtests-that-lie) before you believe a backtest of an LLM signal (the model may have seen the period it is tested on).
+- **"I need Austrian or European data."** [Austria](#austria), [ECB](https://data.ecb.europa.eu/) and [Eurostat](https://ec.europa.eu/eurostat) are keyless.
+- **"I want to learn."** [Courses & Books](#courses--books), starting with López de Prado and Jansen.
 
 ## Contents
 
@@ -32,13 +42,17 @@ Every project listed here was checked for existence and recent activity on **202
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) — Open-source financial LLMs, with data pipelines and fine-tuning recipes.
 - [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) — Open-source AI agent platform for financial analysis, built on LLMs.
 - [FinRL-X](https://github.com/AI4Finance-Foundation/FinRL-Trading) — AI-native, modular infrastructure for quantitative trading from the FinRL team.
+- [Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) — Agent that turns finance questions into research reports, backtests and paper portfolios (MIT). It can also route live orders through a supported broker; treat that part with care.
+- [FinMem](https://arxiv.org/abs/2311.13743) — Paper on an LLM trading agent with layered memory and a character profile; read it for the design, then check the authors' code yourself.
 - [RD-Agent](https://github.com/microsoft/RD-Agent) — Microsoft's agent for automating data-driven R&D, including quantitative factor and model research.
 - [FinBERT](https://github.com/ProsusAI/finBERT) — Financial sentiment analysis with a pre-trained BERT model.
 
 ### MCP Servers
 
-Few finance MCP servers are mature yet; the list stays short on purpose.
+Few finance MCP servers are mature yet; the list stays short on purpose. Servers without a commit in 12 months are left out (for example the Financial Datasets server, last updated in June 2025). Read-only data servers come first; anything that can place orders is marked.
 
+- [Massive MCP Server](https://github.com/massive-com/mcp_massive) — Official MCP server for Massive (formerly Polygon.io) market data; needs a Massive API key (MIT).
+- [SEC EDGAR MCP](https://github.com/stefanoamorelli/sec-edgar-mcp) — Filings, XBRL financials and insider forms from SEC EDGAR for MCP clients (AGPL-3.0).
 - [Alpaca MCP Server](https://github.com/alpacahq/alpaca-mcp-server) — Official server to query market data and place orders (paper or live) from an MCP client. Treat live trading with extreme care.
 
 ---
@@ -48,6 +62,7 @@ Few finance MCP servers are mature yet; the list stays short on purpose.
 - [Kronos](https://github.com/shiyu-coder/Kronos) — Foundation model for the "language" of financial candlesticks. Paper: [Shi et al.](https://arxiv.org/abs/2508.02739).
 - [Chronos](https://github.com/amazon-science/chronos-forecasting) — Pretrained probabilistic time-series models from Amazon. Paper: [Ansari et al.](https://arxiv.org/abs/2403.07815).
 - [TimesFM](https://github.com/google-research/timesfm) — Google's pretrained time-series foundation model. Paper: [Das et al.](https://arxiv.org/abs/2310.10688).
+- [Moirai (uni2ts)](https://github.com/SalesforceAIResearch/uni2ts) — Salesforce's universal time-series forecasting transformer and its training code. Paper: [Woo et al.](https://arxiv.org/abs/2402.02592).
 - [Darts](https://github.com/unit8co/darts) — User-friendly forecasting and anomaly detection, from classical models to deep learning.
 - [sktime](https://github.com/sktime/sktime) — Unified scikit-learn-style framework for time-series ML.
 - [StatsForecast](https://github.com/Nixtla/statsforecast) — Fast statistical and econometric forecasting models.
@@ -82,6 +97,23 @@ Few finance MCP servers are mature yet; the list stays short on purpose.
 - [Freqtrade](https://github.com/freqtrade/freqtrade) — Free crypto trading bot with backtesting, hyper-optimisation and ML strategy support (FreqAI).
 - [Jesse](https://jesse.trade/) — Crypto trading framework for research and live trading.
 
+### Which backtester?
+
+Facts, not rankings. "Live" means the project itself can send orders to a broker or exchange.
+
+| Project | Approach | Language | Live | Licence |
+|---|---|---|---|---|
+| [NautilusTrader](https://github.com/nautechsystems/nautilus_trader) | Event-driven, same code for backtest and live | Rust core, Python API | yes | LGPL-3.0 |
+| [Lean](https://github.com/QuantConnect/Lean) | Event-driven, many asset classes | C#, Python | yes | Apache-2.0 |
+| [Zipline Reloaded](https://github.com/stefan-jansen/zipline-reloaded) | Event-driven on bars, data bundles | Python | no | Apache-2.0 |
+| [VectorBT](https://github.com/polakowo/vectorbt) | Vectorised, thousands of parameter sets at once | Python | no | Apache-2.0 with Commons Clause (you may not sell a product built on it) |
+| [backtesting.py](https://github.com/kernc/backtesting.py) | Bar-by-bar, one instrument, small API | Python | no | AGPL-3.0 |
+| [bt](https://github.com/pmorissette/bt) | Portfolio-level algos (rebalancing, weights) | Python | no | MIT |
+| [hftbacktest](https://github.com/nkaz001/hftbacktest) | Tick-level with order book and latency | Rust, Python | yes | MIT |
+| [Lumibot](https://github.com/Lumiwealth/lumibot) | Event-driven, broker integrations | Python | yes | GPL-3.0 |
+
+Rule of thumb: vectorised engines are fast for screening ideas but make look-ahead and unrealistic fills easy; event-driven engines are slower and closer to how orders really work.
+
 ---
 
 ## Brokers & Execution
@@ -99,6 +131,10 @@ Few finance MCP servers are mature yet; the list stays short on purpose.
 - [skfolio](https://github.com/skfolio/skfolio) — Portfolio optimisation and risk management with a scikit-learn API, including cross-validation for portfolios.
 - [QuantStats](https://github.com/ranaroussi/quantstats) — Portfolio analytics and tear sheets (Sharpe, drawdowns, rolling statistics).
 - [pyfolio-reloaded](https://github.com/stefan-jansen/pyfolio-reloaded) — Maintained fork of Quantopian's performance and risk analysis library.
+- [empyrical-reloaded](https://github.com/stefan-jansen/empyrical-reloaded) — Maintained fork of the risk and performance metrics behind Zipline and pyfolio (Sharpe, drawdown, alpha and beta).
+- [alphalens-reloaded](https://github.com/stefan-jansen/alphalens-reloaded) — Maintained fork of Quantopian's tool to test whether a predictive factor carries information (quantile returns, information coefficient, turnover).
+- [ffn](https://github.com/pmorissette/ffn) — Financial functions for Pandas: performance statistics, drawdowns, returns and plotting.
+- [QuantLib](https://github.com/lballabio/QuantLib) — The standard open-source library for pricing derivatives, curves and fixed income (C++ with Python bindings, BSD-style licence).
 
 ---
 
@@ -140,6 +176,14 @@ Few finance MCP servers are mature yet; the list stays short on purpose.
 - [Statistik Austria Open Data](https://data.statistik.gv.at/) — Official Austrian statistics as open data (CC BY 4.0).
 - [data.gv.at](https://www.data.gv.at/) — Austria's open government data portal.
 
+### Academic datasets
+
+- [Ken French Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html) — Fama-French factors, industry portfolios and breakpoints, free to download. The usual benchmark for factor research.
+- [Open Source Asset Pricing](https://www.openassetpricing.com/) — Chen and Zimmermann's reproducible set of 200+ published return predictors (code: [CrossSection](https://github.com/OpenSourceAP/CrossSection), GPL-2.0). Useful to see how many of them survive.
+- [BIS Data Portal](https://data.bis.org/) — Bank for International Settlements statistics: credit, exchange rates, property prices, derivatives turnover.
+- [CFTC Commitments of Traders](https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm) — Weekly futures positioning of large speculators and commercial hedgers; free, published on Fridays for Tuesday.
+- [U.S. Treasury Fiscal Data](https://fiscaldata.treasury.gov/) — Debt, auctions and interest-rate data from the US Treasury, with an open API.
+
 ### Alternative Data
 
 - [Quiver Quantitative](https://www.quiverquant.com/) — Congressional trading, lobbying, insider trades and more.
@@ -171,6 +215,9 @@ Few finance MCP servers are mature yet; the list stays short on purpose.
 - [FinGPT: Open-Source Financial Large Language Models](https://arxiv.org/abs/2306.06031) — Yang et al. (2023).
 - [FinRobot: An Open-Source AI Agent Platform for Financial Applications](https://arxiv.org/abs/2405.14767) — Yang et al. (2024).
 - [TradingAgents: Multi-Agents LLM Financial Trading Framework](https://arxiv.org/abs/2412.20138) — Xiao et al. (2024).
+- [Can ChatGPT Forecast Stock Price Movements?](https://arxiv.org/abs/2304.07619) — Lopez-Lira & Tang (2023). News-based LLM signals; read together with the look-ahead warnings in Pitfalls.
+- [FinanceBench: A New Benchmark for Financial Question Answering](https://arxiv.org/abs/2311.11944) — Islam et al. (2023).
+- [FinBen: A Holistic Financial Benchmark for Large Language Models](https://arxiv.org/abs/2402.12659) — Xie et al. (2024); code: [FinBen](https://github.com/The-FinAI/FinBen) (MIT).
 
 ### Time-Series Foundation Models
 
@@ -202,6 +249,10 @@ Few finance MCP servers are mature yet; the list stays short on purpose.
 A strategy that looks great in a backtest is usually a statistical accident. Read these first.
 
 - [The Probability of Backtest Overfitting](https://doi.org/10.21314/JCF.2016.322) — Bailey, Borwein, López de Prado & Zhu (2016). How many trials you ran matters as much as the result.
+- [Pseudo-Mathematics and Financial Charlatanism](https://doi.org/10.1090/noti1105) — Bailey, Borwein, López de Prado & Zhu, Notices of the AMS (2014). How many strategy variants you can try before a short backtest finds a good-looking one by luck.
+- [...and the Cross-Section of Expected Returns](https://doi.org/10.1093/rfs/hhv059) — Harvey, Liu & Zhu, Review of Financial Studies (2016). With hundreds of factors tried, the bar for a new one must be higher (t above 3).
+- [Is There a Replication Crisis in Finance?](https://doi.org/10.1111/jofi.13249) — Jensen, Kelly & Pedersen, Journal of Finance (2023). Testing 153 factors the same way, most replicate, and the evidence clusters in a few themes.
+- [A Backtesting Protocol in the Era of Machine Learning](https://doi.org/10.3905/jfds.2019.1.064) — Arnott, Harvey & Markowitz, Journal of Financial Data Science (2019). A checklist for researchers.
 - [The Deflated Sharpe Ratio](https://doi.org/10.3905/jpm.2014.40.5.094) — Bailey & López de Prado (2014). Corrects the Sharpe ratio for selection bias, overfitting and non-normal returns.
 - Checklist that applies to every tool above: no look-ahead bias, split by time (never shuffle), include fees and slippage, count every strategy you tried, test out-of-sample, then paper-trade before using real money.
 
