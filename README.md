@@ -38,7 +38,7 @@ Not sure where to begin? Pick the question you have:
 ## LLMs & AI Agents
 
 - [TradingAgents](https://github.com/TauricResearch/TradingAgents) — Multi-agent LLM framework that mimics a trading firm (analysts, researchers, trader, risk team). Paper: [Xiao et al.](https://arxiv.org/abs/2412.20138).
-- [TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN) — Chinese-enhanced multi-agent LLM research assistant for China A-share stocks (debate-style agents, screening, paper trading). Hybrid licence: Apache-2.0 for the core agent library and supporting code; proprietary source-available `app/` and `frontend/` (personal evaluation and non-commercial education allowed; redistribution and commercial use of those dirs need a separate licence).
+- [TradingAgents-CN](https://github.com/hsliuping/TradingAgents-CN) — Chinese-enhanced multi-agent LLM research assistant for China A-share stocks (debate-style agents, screening, paper trading). Hybrid licence: Apache-2.0 for the core agent library and supporting code; proprietary source-available `app/`, `frontend/` and `core/` (personal evaluation and non-commercial education allowed; redistribution and commercial use of those dirs need a separate licence).
 - [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) — Proof-of-concept team of LLM agents that analyse stocks (for education, no live trading).
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) — Open-source financial LLMs, with data pipelines and fine-tuning recipes.
 - [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) — Open-source AI agent platform for financial analysis, built on LLMs.
