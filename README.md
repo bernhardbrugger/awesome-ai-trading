@@ -53,6 +53,7 @@ Few finance MCP servers are mature yet; the list stays short on purpose. Servers
 
 - [Massive MCP Server](https://github.com/massive-com/mcp_massive) — Official MCP server for Massive (formerly Polygon.io) market data; needs a Massive API key (MIT).
 - [SEC EDGAR MCP](https://github.com/stefanoamorelli/sec-edgar-mcp) — Filings, XBRL financials and insider forms from SEC EDGAR for MCP clients (AGPL-3.0).
+- [DC Hub](https://github.com/azmartone67/dchub-mcp-server) — Hosted read-only MCP for data-center site selection and US power/grid/energy context; Data Center Power Index (DCPI) across 300+ markets; remote endpoint https://dchub.cloud/mcp; free to start (MIT).
 - [Alpaca MCP Server](https://github.com/alpacahq/alpaca-mcp-server) — Official server to query market data and place orders (paper or live) from an MCP client. Treat live trading with extreme care.
 
 ---
