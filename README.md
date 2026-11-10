@@ -152,6 +152,7 @@ Rule of thumb: vectorised engines are fast for screening ideas but make look-ahe
 ### Market Data
 
 - [yfinance](https://github.com/ranaroussi/yfinance) — Free historical and delayed market data from Yahoo Finance. Not an official API; check Yahoo's terms for your use.
+- [AKShare](https://github.com/akfamily/akshare) — Python library with one-call functions for free public financial data, mostly Chinese markets (A-shares and more) plus some US stocks. Documentation in Chinese; its README warns that interfaces can be removed when a source changes.
 - [Alpaca Market Data](https://alpaca.markets/data) — Stock, options and crypto data with a free tier.
 - [Databento](https://databento.com/) — Institutional-grade tick and order-book data, pay per use.
 - [Massive (formerly Polygon.io)](https://massive.com/) — Real-time and historical data for stocks, options, forex and crypto.
