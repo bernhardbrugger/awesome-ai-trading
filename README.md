@@ -89,7 +89,7 @@ Few finance MCP servers are mature yet; the list stays short on purpose. Servers
 - [VectorBT](https://github.com/polakowo/vectorbt) — Fast vectorised backtesting and analysis for large parameter sweeps.
 - [backtesting.py](https://github.com/kernc/backtesting.py) — Small, readable backtesting library (AGPL-3.0).
 - [Zipline Reloaded](https://github.com/stefan-jansen/zipline-reloaded) — Maintained fork of Quantopian's Zipline.
-- [Backtrader](https://www.backtrader.com/) ⚠️ — Feature-rich Python backtesting and live-trading framework; the [repository](https://github.com/mementum/backtrader) has had no commits since 2024.
+- [Backtrader](https://www.backtrader.com/) ⚠️ — Feature-rich Python backtesting and live-trading framework; the [repository](https://github.com/mementum/backtrader) has had no commits since April 2023.
 - [bt](https://github.com/pmorissette/bt) — Flexible backtesting for portfolio-level strategies.
 - [Lumibot](https://github.com/Lumiwealth/lumibot) — Backtesting and live-trading framework with broker integrations and AI-agent support (GPL-3.0).
 - [vn.py](https://github.com/vnpy/vnpy) — Python framework for quantitative trading platforms (documentation mostly in Chinese).
