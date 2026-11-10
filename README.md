@@ -277,7 +277,7 @@ Starting points for research, not recommendations. For a searchable collection w
 ### Books
 
 - [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) — Marcos López de Prado. The reference for ML in quant finance.
-- [Machine Learning for Algorithmic Trading](https://www.packtpub.com/product/machine-learning-for-algorithmic-trading-second-edition/9781839217715) — Stefan Jansen. Hands-on ML for trading with Python.
+- [Machine Learning for Algorithmic Trading](https://www.packtpub.com/product/machine-learning-for-algorithmic-trading-second-edition/9781839217715) — Stefan Jansen. Hands-on ML for trading with Python. The [code for the 3rd edition](https://github.com/stefan-jansen/machine-learning-for-trading) (27 chapters, nine case studies, MIT) is free on GitHub; the 2nd edition's code is on its `second-edition` branch.
 - [Quantitative Trading](https://www.wiley.com/en-us/Quantitative+Trading%3A+How+to+Build+Your+Own+Algorithmic+Trading+Business%2C+2nd+Edition-p-9781119800064) — Ernest Chan. From idea to a running strategy.
 - [Python for Finance](https://www.oreilly.com/library/view/python-for-finance/9781492024323/) — Yves Hilpisch. Computational finance with Python.
 - [Trading and Exchanges](https://openlibrary.org/isbn/9780195144703) — Larry Harris. Market microstructure fundamentals.
