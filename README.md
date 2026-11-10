@@ -198,7 +198,7 @@ Rule of thumb: vectorised engines are fast for screening ideas but make look-ahe
 - [CCXT](https://github.com/ccxt/ccxt) — Unified exchange API (see above).
 - [CoinGecko](https://www.coingecko.com/en/api) — Crypto market data API with a free tier.
 - [CoinMarketCap](https://coinmarketcap.com/api/) — Crypto market data and rankings.
-- [Messari](https://messari.io/api) — Crypto asset data, metrics and research.
+- [Blockworks API (formerly Messari)](https://docs.blockworks.com/) — Crypto asset data, metrics and research. messari.io now redirects to Blockworks; the legacy Messari API is in maintenance mode and new data ships only on the Blockworks API.
 - [Glassnode](https://glassnode.com/) — On-chain market intelligence.
 
 ---
