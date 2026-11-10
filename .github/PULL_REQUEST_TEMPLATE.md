@@ -10,7 +10,7 @@
 
 - [ ] The link works and goes to the project itself (no tracking or referral parameters)
 - [ ] Not a duplicate: I searched the README
-- [ ] GitHub project: not archived, last push within 12 months (`node scripts/repo-facts.mjs owner/name`)
+- [ ] GitHub project: not archived, last commit or release within 12 months (`node scripts/repo-facts.mjs owner/name` says `ok`)
 - [ ] Paper: title, authors and year confirmed (`node scripts/arxiv-titles.mjs <id>` or the DOI)
 - [ ] `node scripts/check-links.mjs` shows no new problem
 - [ ] Not a signal seller, a paid course without a free part, or a referral link
