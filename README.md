@@ -55,6 +55,7 @@ Few finance MCP servers are mature yet; the list stays short on purpose. Servers
 - [Massive MCP Server](https://github.com/massive-com/mcp_massive) — Official MCP server for Massive (formerly Polygon.io) market data; needs a Massive API key (MIT).
 - [SEC EDGAR MCP](https://github.com/stefanoamorelli/sec-edgar-mcp) — Filings, XBRL financials and insider forms from SEC EDGAR for MCP clients (AGPL-3.0).
 - [Alpaca MCP Server](https://github.com/alpacahq/alpaca-mcp-server) — Official server to query market data and place orders (paper or live) from an MCP client. Treat live trading with extreme care.
+- [fxapis MCP server](https://fxapis.com/mcp) — Hosted MCP server for MetaTrader 5 accounts (positions, orders, history) and MarketLabs research (economic calendar, CFTC positioning, cited daily brief); OAuth sign-in, read-only unless the user allows trading. Commercial service (paid plans, 14-day trial). Can place orders; treat live trading with extreme care.
 
 ---
 
