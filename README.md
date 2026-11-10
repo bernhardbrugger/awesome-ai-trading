@@ -42,6 +42,7 @@ Not sure where to begin? Pick the question you have:
 - [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) — Proof-of-concept team of LLM agents that analyse stocks (for education, no live trading).
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) — Open-source financial LLMs, with data pipelines and fine-tuning recipes.
 - [FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) — Open-source AI agent platform for financial analysis, built on LLMs.
+- [DisconfirmAI](https://disconfirmai.com/en) — Investment research and reading platform built around seeking evidence that could overturn a thesis before treating it as conviction (daily reading, filings research, condition-based radar, personal frameworks).
 - [FinRL-X](https://github.com/AI4Finance-Foundation/FinRL-Trading) — AI-native, modular infrastructure for quantitative trading from the FinRL team.
 - [Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) — Agent that turns finance questions into research reports, backtests and paper portfolios (MIT). It can also route live orders through a supported broker; treat that part with care.
 - [FinMem](https://arxiv.org/abs/2311.13743) — Paper on an LLM trading agent with layered memory and a character profile; read it for the design, then check the authors' code yourself.
