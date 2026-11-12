@@ -47,6 +47,7 @@ Not sure where to begin? Pick the question you have:
 - [FinMem](https://arxiv.org/abs/2311.13743) — Paper on an LLM trading agent with layered memory and a character profile; read it for the design, then check the authors' code yourself.
 - [RD-Agent](https://github.com/microsoft/RD-Agent) — Microsoft's agent for automating data-driven R&D, including quantitative factor and model research.
 - [FinBERT](https://github.com/ProsusAI/finBERT) — Financial sentiment analysis with a pre-trained BERT model.
+- [LLM_trader (Semantic Signal)](https://github.com/qrak/LLM_trader) — Paper-trading LLM agent that renders each closed candle's chart, retrieves its own closed trades as memory, and books a trade only after deterministic checks; every prompt and decision is public.
 
 ### MCP Servers
 
