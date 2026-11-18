@@ -189,6 +189,7 @@ Rule of thumb: vectorised engines are fast for screening ideas but make look-ahe
 ### Alternative Data
 
 - [Quiver Quantitative](https://www.quiverquant.com/) — Congressional trading, lobbying, insider trades and more.
+- [US Congress Stock Trades API](https://apify.com/johnvc/us-congress-financial-disclosures-and-stock-trading-data) — Congressional stock trades and financial disclosures as JSON via an Apify Actor; pay per result, with Apify's free monthly credit covering small runs.
 - [StockTwits](https://stocktwits.com/) — Social sentiment from the StockTwits community.
 - [Reddit API](https://www.reddit.com/dev/api/) — Access finance subreddits such as r/wallstreetbets; mind the API terms and rate limits.
 - [Google Trends](https://trends.google.com/trends/) — Search interest as a market signal.
