@@ -189,6 +189,7 @@ Rule of thumb: vectorised engines are fast for screening ideas but make look-ahe
 ### Alternative Data
 
 - [Quiver Quantitative](https://www.quiverquant.com/) — Congressional trading, lobbying, insider trades and more.
+- [AlphaYou](https://alphayou.net) — Congress, insider, 13F fund and public Hyperliquid trader data with links to original filings, also as an MCP server and Claude/ChatGPT connector; free tier (free API/MCP key, 100 request units a day), paid plans for more.
 - [StockTwits](https://stocktwits.com/) — Social sentiment from the StockTwits community.
 - [Reddit API](https://www.reddit.com/dev/api/) — Access finance subreddits such as r/wallstreetbets; mind the API terms and rate limits.
 - [Google Trends](https://trends.google.com/trends/) — Search interest as a market signal.
